@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class waypoints : MonoBehaviour
 {
-    [SerializeField] bool Tile;
+    [SerializeField] bool tile;
+    [SerializeField] GameObject towerPrefab;
+    [SerializeField] bool istowerplaced = false;
+    
 
     void OnMouseDown(){
-        if(Tile == true){
-            Debug.Log(transform.name.ToString());
+        if(tile == true && istowerplaced == false){
+            Instantiate(towerPrefab,transform.position,Quaternion.identity);
+            istowerplaced = true;
         }
         
     }

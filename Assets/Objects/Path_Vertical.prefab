@@ -17,6 +17,11 @@ PrefabInstance:
       propertyPath: Tile
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2894650870896514080, guid: 27801d47d455c3f4388f1d345c7b2c51,
+        type: 3}
+      propertyPath: tile
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3318198564006373957, guid: 27801d47d455c3f4388f1d345c7b2c51,
         type: 3}
       propertyPath: m_LocalRotation.w

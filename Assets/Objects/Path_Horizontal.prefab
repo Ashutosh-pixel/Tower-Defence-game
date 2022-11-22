@@ -32,6 +32,11 @@ PrefabInstance:
       propertyPath: Tile
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2064313159575575592, guid: 81b19ca887e82204fb8fd6d3658862c2,
+        type: 3}
+      propertyPath: tile
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3626953646421891847, guid: 81b19ca887e82204fb8fd6d3658862c2,
         type: 3}
       propertyPath: m_Mesh

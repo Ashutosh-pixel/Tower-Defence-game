@@ -138,7 +138,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc9e15d3f813b3641821c01adca9d411, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Tile: 1
+  tile: 1
+  towerPrefab: {fileID: 5872705046450787071, guid: cebc36e59fcb1f74f94075b6f057b023,
+    type: 3}
 --- !u!1 &8559300587329783315
 GameObject:
   m_ObjectHideFlags: 0
