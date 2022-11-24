@@ -7,7 +7,6 @@ public class waypoints : MonoBehaviour
     [SerializeField] bool tile;
     [SerializeField] GameObject towerPrefab;
     [SerializeField] bool istowerplaced = false;
-    
 
     void OnMouseDown(){
         if(tile == true && istowerplaced == false){

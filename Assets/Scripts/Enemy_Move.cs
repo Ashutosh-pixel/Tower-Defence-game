@@ -6,6 +6,7 @@ public class Enemy_Move : MonoBehaviour
 {
     [SerializeField] List<waypoints> path = new List<waypoints>();
     [SerializeField] float speed;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,19 +15,18 @@ public class Enemy_Move : MonoBehaviour
 
     IEnumerator Path()
     {
+        yield return new WaitForSeconds(1);
         foreach (waypoints waypoints in path)
         {
-            transform.LookAt(waypoints.transform.position);
-            Vector3 startpoint = transform.position;
+            
             Vector3 endpoint = waypoints.transform.position;
-            float delta = 0;
-            while (delta < 1f)
+            transform.LookAt(endpoint);
+            float distance = Vector3.Distance(transform.position, endpoint);
+            while (transform.position != endpoint)
             {
-                delta += Time.deltaTime*speed;
-                transform.position = Vector3.Lerp(startpoint,endpoint,delta);
+                transform.position = Vector3.MoveTowards(transform.position, endpoint, distance * Time.deltaTime*speed);
                 yield return null;
             }
         }
-
     }
 }
