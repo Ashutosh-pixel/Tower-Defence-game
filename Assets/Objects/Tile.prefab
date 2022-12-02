@@ -141,6 +141,7 @@ MonoBehaviour:
   tile: 1
   towerPrefab: {fileID: 5872705046450787071, guid: cebc36e59fcb1f74f94075b6f057b023,
     type: 3}
+  istowerplaced: 0
 --- !u!1 &8559300587329783315
 GameObject:
   m_ObjectHideFlags: 0

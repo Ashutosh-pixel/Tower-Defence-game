@@ -5,21 +5,23 @@ using UnityEngine;
 public class HealthSystem : MonoBehaviour
 {
     [SerializeField] int maxHealth = 5;
-    int currentHealth;
+    [SerializeField] int currentHealth;
 
     void Start(){
         currentHealth = maxHealth;
     }
 
-    void OnParticleCollision(){
-        
-        Debug.Log(currentHealth);
-        if(currentHealth != 0){
+    void OnParticleCollision(GameObject other){
+        if(currentHealth != 1){
             currentHealth--;
         }
         else{
             Destroy(gameObject);
         }
     }
+
+    
+
+    
 
 }
